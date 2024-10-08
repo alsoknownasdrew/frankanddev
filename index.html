@@ -8,15 +8,21 @@
     <style>
         html {
             font-size: 16px;
-            overflow-wrap: break-word;
         }
 
         body {
             background: #333;
             color: #ededed;
             line-height: 1.65;
+            margin: 0;
+            padding: 0;
             max-width: 50em;
             font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+        }
+
+        main {
+            padding: 0 .5rem;
+            overflow-wrap: break-word;
         }
 
         h1,
@@ -56,30 +62,68 @@
         a {
             color: #ff1100;
         }
+
+        nav {
+            position: fixed;
+            width: 100vw;
+            bottom: 0;
+            background: #333;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            border: solid 1px #ededed;
+            flex: 1;
+            padding: .5rem;
+        }
+
+        footer {
+            padding: 2rem .5rem 4.5rem;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Code<br>Build<br>Repeat</h1>
-    </header>
-    <hr>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Talks</a></li>
+            <li><a href="#">Uses</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <main>
+        <header>
+            <h1>Code<br>Build<br>Repeat</h1>
+            <hr>
+        </header>
         <h2>About</h2>
         <p>Software engineer with nearly a decade in the field, combining technology and human-focused solutions.
             Background includes local agencies and large product companies, bringing together the strengths of both
             worlds.</p>
-        <h2>What I Do:</h2>
+
+        <h2>What I Do</h2>
         <p>Let's build systems that last — whether it's a client-side interaction or backend infrastructure that hums in
             the background.</p>
         <p>From starting a project from scratch to untangling code that someone left behind, the goal is always to get
             things working efficiently.</p>
         <ul>
             <li>Backends that scale: APIs, microservices, and serverless setups that can handle the heat</li>
-            <li>Frontends that click: Interfaces built for speed, function, and clarity.</li>
-            <li>Operations that deliver: Continuous integration and delivery, cloud-native services, infrastructure-as-code. DevOps isn't just a buzzword!</li>
+            <li>Frontends that click: interfaces built for speed, function, and clarity.</li>
+            <li>Operations that deliver: continuous integration and delivery, cloud-native services,
+                infrastructure-as-code. DevOps isn't just a buzzword.</li>
         </ul>
-        <h2>Contact:</h2>
+
+        <h2>Contact</h2>
         <ul>
             <li><a href="mailto:#">Email &nearrow;</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn &nearrow;</a></li>
@@ -87,7 +131,7 @@
         </ul>
     </main>
     <footer>
-        <p>@2024 Andriy Frankevych. Texts slightly enchanced by AI</p>
+        <p>@2024 Andriy Frankevych. Texts slightly enhanced by AI</p>
     </footer>
 </body>
 
